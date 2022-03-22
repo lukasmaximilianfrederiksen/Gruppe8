@@ -94,6 +94,8 @@ main {
   margin: 1rem;
 }
 
+/* Knapper components */
+
 [data-button="primary"] {
   --color-button-bg: var(--green-600);
   --color-button-text: var(--white);
@@ -149,6 +151,14 @@ button:hover {
 
 .ghost:hover {
   border-bottom: solid 2px #6b7788;
+}
+
+/* Navbar forside */
+
+.navFlexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* Login form */
