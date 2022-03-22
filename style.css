@@ -15,8 +15,6 @@
   --red-600: #e17f7b;
   --red-200: #eaa6a3;
 
-  
-
   /* Alias Tokens - se enkelt element*/
 
   --color-bg: ;
@@ -34,8 +32,7 @@
   --color-button-text-highlight: ;
 
   --color-button-border: ;
-  --color-button-border-highlight:
-  
+  --color-button-border-highlight: ;
 
   /* Tekst layout */
 
@@ -103,7 +100,6 @@ main {
   --color-button-text-highlight: var(--white);
   --color-button-bg-highlight: var(--green-100);
   --color-button-border: none;
-
 }
 
 [data-button="secondary"] {
@@ -112,7 +108,7 @@ main {
   --color-button-text: var(--green-600);
   --color-button-text-highlight: var(--white);
   --color-button-bg-highlight: var(--green-600);
-  --color-button-border-highlight: var(--green-600)
+  --color-button-border-highlight: var(--green-600);
 }
 
 /* [data-button="ghost"] {
@@ -127,9 +123,6 @@ main {
   --color-button-text: var(--white);
   --color-button-text-highlight: var(--white);
   --color-button-bg-highlight: var(--red-200);
-
-
-
 }
 
 button {
@@ -150,13 +143,10 @@ button:hover {
 }
 
 .ghost {
-    color: var(--bluegray) ;
- text-decoration: none;
-
-
+  color: var(--bluegray);
+  text-decoration: none;
 }
 
 .ghost:hover {
-    border-bottom: solid 2px #6b7788;
-    
+  border-bottom: solid 2px #6b7788;
 }
