@@ -14,8 +14,22 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <form>
+        <label for="email">Brugernavn</label>
+        <input type="email" id="email" />
+        <label for="pass">Password</label>
+        <input type="password" />
+        <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+        <label for="rememberMe">Remember me</label>
+        <input type="submit" value="Login" onclick="lsRememberMe()" />
+      </form>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
