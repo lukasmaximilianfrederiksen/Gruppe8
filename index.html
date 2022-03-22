@@ -25,15 +25,23 @@
       </nav>
     </header>
     <main>
-      <form>
-        <label for="email">Brugernavn</label>
-        <input type="email" id="email" />
-        <label for="pass">Password</label>
-        <input type="password" />
-        <input type="checkbox" value="lsRememberMe" id="rememberMe" />
-        <label for="rememberMe">Remember me</label>
-        <input type="submit" value="Login" onclick="lsRememberMe()" />
-      </form>
+      <div class="container">
+        <div class="split_left">
+          <h1>LOG IND</h1>
+          <form>
+            <label for="email">Brugernavn</label>
+            <input type="email" id="email" />
+            <label for="pass">Password</label>
+            <input type="password" />
+            <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+            <label for="rememberMe">Husk mig</label>
+            <input type="submit" value="Log Ind" onclick="lsRememberMe()" />
+          </form>
+        </div>
+        <div class="split_right">
+          <video src="film.mp4"></video>
+        </div>
+      </div>
     </main>
 
     <script src="script.js"></script>
