@@ -214,15 +214,20 @@ label {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .split_left {
   margin-left: 12rem;
   margin-top: 19rem;
+  grid-column: 1/3;
 }
 
 .split_right video {
   height: 100vh;
   align-items: right;
+}
+
+.split_right {
+  grid-column: 3/4;
 }
