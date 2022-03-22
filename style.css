@@ -15,6 +15,8 @@
   --red-600: #e17f7b;
   --red-200: #eaa6a3;
 
+  
+
   /* Alias Tokens - se enkelt element*/
 
   --color-bg: ;
@@ -26,9 +28,14 @@
   --color-ghost-base: ;
 
   --color-button-bg: ;
-  --color-button-text: ;
-  --color-button-border: ;
   --color-button-bg-highlight: ;
+
+  --color-button-text: ;
+  --color-button-text-highlight: ;
+
+  --color-button-border: ;
+  --color-button-border-highlight:
+  
 
   /* Tekst layout */
 
@@ -72,25 +79,57 @@
 }
 
 body {
+  background: var(--white);
 }
 
 main {
 }
 
+.testWrap {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.testWrap > * {
+  margin: 1rem;
+}
+
 [data-button="primary"] {
   --color-button-bg: var(--green-600);
-  --color-button-text: ;
-  --color-button-border: ;
+  --color-button-text: var(--white);
+  --color-button-text-highlight: var(--white);
   --color-button-bg-highlight: var(--green-100);
+  --color-button-border: none;
+
 }
 
 [data-button="secondary"] {
+  --color-button-border: var(--green-600);
+  --color-button-bg: var(--white);
+  --color-button-text: var(--green-600);
+  --color-button-text-highlight: var(--white);
+  --color-button-bg-highlight: var(--green-600);
+  --color-button-border-highlight: var(--green-600)
 }
 
-[data-button="ghost"] {
-}
+/* [data-button="ghost"] {
+  --color-button-border: none;
+   --color-button-text: var(--bluegray);
+
+} */
 
 [data-button="tetriary"] {
+  --color-button-border: none;
+  --color-button-bg: var(--red-600);
+  --color-button-text: var(--white);
+  --color-button-text-highlight: var(--white);
+  --color-button-bg-highlight: var(--red-200);
+
+
+
 }
 
 button {
@@ -100,14 +139,26 @@ button {
   color: var(--color-button-text);
   border-radius: 5px;
   font-weight: 800;
-  border: var(--color-button-border);
+  border: solid 2px var(--color-button-border);
+  max-width: 10rem;
 }
 
 button:hover {
   background: var(--color-button-bg-highlight);
+  color: var(--color-button-text-highlight);
+  border: solid 2px var(--color-button-border-highlight);
 }
 
-.ghost a {
+.ghost {
+    color: var(--bluegray) ;
+ text-decoration: none;
+
+
+}
+
+.ghost:hover {
+    border-bottom: solid 2px #6b7788;
+    
 }
 
 /* Login form */
